@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mohamed Eltohamy Delivery Services LLC</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Poppins,Arial;background:#f4f6f9;color:#222}
+header{background:#0f172a;color:white;padding:18px 40px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:1000}
+nav a{color:white;text-decoration:none;margin-left:25px;font-weight:500}
+
+.hero{
+height:85vh;
+background:url("https://images.unsplash.com/photo-1526367790999-0150786686a2?auto=format&fit=crop&w=1600&q=80") center/cover no-repeat;
+position:relative;
+color:white;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:40px
+}
+
+.hero::after{
+content:"";
+position:absolute;
+left:0;top:0;right:0;bottom:0;
+background:rgba(0,0,0,0.65);
+}
+
+.hero div{position:relative;z-index:2}
+
+.hero h1{font-size:48px;margin-bottom:20px}
+.hero p{font-size:18px;max-width:800px;margin:auto;margin-bottom:30px}
+
+.btn{background:#facc15;border:none;padding:14px 26px;border-radius:8px;font-weight:600;cursor:pointer}
+
+.section{padding:80px 40px;max-width:1200px;margin:auto}
+.section h2{text-align:center;margin-bottom:50px;font-size:32px}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:30px}
+
+.card{background:white;padding:25px;border-radius:12px;box-shadow:0 8px 25px rgba(0,0,0,0.08)}
+.card h3{margin-top:10px}
+
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:30px;text-align:center}
+.stat{background:white;padding:30px;border-radius:10px;font-size:26px;font-weight:700;box-shadow:0 5px 18px rgba(0,0,0,0.08)}
+
+.partners{display:flex;flex-wrap:wrap;justify-content:center;gap:60px;align-items:center}
+.partners img{height:60px;max-width:160px;object-fit:contain}
+
+.service-img{
+width:100%;
+height:180px;
+object-fit:cover;
+border-radius:10px;
+}
+
+.dashboard{background:#0f172a;color:white;padding:70px 40px}
+
+footer{background:#020617;color:white;text-align:center;padding:30px}
+
+input,textarea{width:100%;padding:12px;margin-top:10px;border-radius:6px;border:1px solid #ccc}
+form button{margin-top:15px}
+</style>
+</head>
+<body>
+
+<header>
+<h2>Mohamed Eltohamy Delivery Services LLC</h2>
+<nav>
+<a href="#home">Home</a>
+<a href="#services">Services</a>
+<a href="#riders">Riders</a>
+<a href="#fleet">Fleet</a>
+<a href="#partners">Partners</a>
+<a href="#apply">Apply</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<section class="hero" id="home">
+<div>
+<h1>UAE Leading Fleet Partner for Delivery Platforms</h1>
+<p>Supporting Talabat, Noon, Amazon and Keeta delivery operations with professional rider fleets and logistics systems across the UAE.</p>
+<button class="btn" onclick="document.getElementById('apply').scrollIntoView()">Become a Rider</button>
+</div>
+</section>
+
+<section class="section">
+<h2>Company Statistics</h2>
+<div class="stats">
+<div class="stat">1400+ Riders Fleet</div>
+<div class="stat">5 UAE Cities</div>
+<div class="stat">4 Global Platforms</div>
+<div class="stat">24/7 Operations</div>
+</div>
+</section>
+
+<section class="section" id="partners">
+<h2>Official Fleet Partner</h2>
+<div class="partners">
+<img src="https://upload.wikimedia.org/wikipedia/commons/3/30/Talabat_logo_2021.png" alt="Talabat">
+<img src="https://upload.wikimedia.org/wikipedia/commons/0/0a/Noon_logo.svg" alt="Noon">
+<img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Amazon_icon.svg/512px-Amazon_icon.svg.png" alt="Delivery Partner">
+</div>
+</section>
+
+<section class="section" id="services">
+<h2>Professional Services</h2>
+<div class="grid">
+
+<div class="card">
+<img class="service-img" src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=900&q=80">
+<h3>Fleet Partner Operations</h3>
+<p>Large scale rider fleet supply for Talabat, Noon, Amazon logistics and food delivery operations.</p>
+</div>
+
+<div class="card">
+<img class="service-img" src="https://images.unsplash.com/photo-1593950315186-76a92975b60c?auto=format&fit=crop&w=900&q=80">
+<h3>Rider Management</h3>
+<p>Recruitment, onboarding, performance monitoring and operational rider supervision.</p>
+</div>
+
+<div class="card">
+<img class="service-img" src="https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?auto=format&fit=crop&w=900&q=80">
+<h3>Fleet Management</h3>
+<p>Bike tracking systems, maintenance scheduling and operational fleet management.</p>
+</div>
+
+<div class="card">
+<img class="service-img" src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&fit=crop&w=900&q=80">
+<h3>Logistics Support</h3>
+<p>End‑to‑end logistics operations for restaurants, e‑commerce and delivery platforms.</p>
+</div>
+
+</div>
+</section>
+
+<section class="section" id="riders">
+<h2>Our Rider Community</h2>
+<p style="text-align:center;max-width:900px;margin:auto;margin-bottom:40px">
+Our fleet includes riders from multiple international communities supporting delivery operations across UAE.
+</p>
+
+<div class="grid">
+<div class="card"><h3>Bangladesh</h3></div>
+<div class="card"><h3>Cameroon</h3></div>
+<div class="card"><h3>Egypt</h3></div>
+<div class="card"><h3>Ethiopia</h3></div>
+<div class="card"><h3>Ghana</h3></div>
+<div class="card"><h3>India</h3></div>
+<div class="card"><h3>Kenya</h3></div>
+<div class="card"><h3>Nepal</h3></div>
+<div class="card"><h3>Pakistan</h3></div>
+<div class="card"><h3>Sudan</h3></div>
+<div class="card"><h3>Syria</h3></div>
+<div class="card"><h3>Uganda</h3></div>
+</div>
+</section>
+
+<section class="section" id="fleet">
+<h2>Fleet & Bike Program</h2>
+<div class="grid">
+<div class="card">
+<h3>Honda 160 CC Brand New Bikes</h3>
+<p>All riders are provided with powerful Honda 160 CC brand new motorcycles to ensure safe and reliable delivery operations across the UAE.</p>
+</div>
+
+<div class="card">
+<h3>Bike Replacement Every 2 Years</h3>
+<p>Our fleet policy ensures bikes are replaced every 2 years, keeping riders equipped with modern, reliable and efficient motorcycles.</p>
+</div>
+
+<div class="card">
+<h3>Company Repair Garages</h3>
+<p>We operate our own repair garages in Dubai, Sharjah, Ras Al Khaimah, Al Ain and Abu Dhabi to provide fast maintenance and repair services for our fleet.</p>
+</div>
+
+<div class="card">
+<h3>Fleet Maintenance Support</h3>
+<p>Dedicated technical teams handle bike servicing, mechanical repairs and maintenance checks to keep our 1400+ rider fleet operational 24/7.</p>
+</div>
+</div>
+</section>
+
+<section class="dashboard">
+<div class="section" style="color:white">
+<h2>Advanced Fleet Management System</h2>
+<div class="grid">
+<div class="card">
+<h3>Rider Performance System</h3>
+<p>Automated rider performance monitoring and reporting.</p>
+</div>
+
+<div class="card">
+<h3>Salary Slip Automation</h3>
+<p>Digital salary slip system integrated with operations dashboard.</p>
+</div>
+
+<div class="card">
+<h3>Operations Dashboard</h3>
+<p>Central system managing riders, fleet vehicles and delivery operations.</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<section class="section" id="apply">
+<h2>Apply As Rider</h2>
+<form>
+<input placeholder="Full Name">
+<input placeholder="Phone Number">
+<input placeholder="Email">
+<textarea placeholder="Delivery Experience"></textarea>
+<button class="btn">Submit Application</button>
+</form>
+</section>
+
+<section class="section" id="contact">
+<h2>Contact Information</h2>
+<p><strong>Company:</strong> Mohamed Eltohamy Delivery Services LLC</p>
+<p><strong>Owner:</strong> Muhammad Saqib Rehmat Ali</p>
+<p><strong>Phone:</strong> 0554739249</p>
+<p><strong>Email:</strong> admin@eltohamydelivery.com</p>
+<p><strong>Operations:</strong> Dubai, Sharjah, Ras Al Khaimah, Al Ain, Abu Dhabi</p>
+</section>
+
+<footer>
+<p>© 2026 Mohamed Eltohamy Delivery Services LLC | UAE Fleet Partner</p>
+</footer>
+
+</body>
+</html>
